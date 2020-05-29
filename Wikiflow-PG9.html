@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="wikiflowcss.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikiflow PG9</title>
+</head>
+<body class="scroll-fix-pg9">
+    <div class="headercontainer3">
+        <div class="Logo"><a class="hyperlink-class-Logo" href="index.html"><img src="img/Wikiflow-Logo.png" width="200px" height="60px"></a></div>
+        <div class="Options-Container">
+            <div class="Headeroptions"><a class="hyperlink-class-header" href="Wikiflow-PG9.html">Playlists</a></div>
+            <div class="Headeroptions"><a class="hyperlink-class-header" href="Wikiflow-PG7.html">Artistas</a></div>
+            <div class="Headeroptions"><a class="hyperlink-class-header" href="Wikiflow-PG10.html">Sobre</a></div>
+            <div class="Headeroptions"><a class="hyperlink-class-header" href="Wikiflow-PG11.html">Contato</a></div>
+        </div>
+    </div>
+    <div class="Files-PG9">PLAYLISTS</div>
+    <div class="Anosx">ANOS 90</div>
+    <div class="Row-display-container9">
+        <div class="Columns-display-container9">
+            <button class="Insider-column-divs9 racionaismcs" onclick="playAudio()" type="button" id="playBtn"></button>
+            <button class="Insider-column-divs9 racionaismcs" onclick="pauseAudio()" type="button" id="pauseBtn" style="display:none;"></button>  
+            <audio id="myAudioMCs">
+                <source src="racionais-jesuschorou.mp3" type="audio/mpeg">  
+                    Your browser does not support the audio element.
+            </audio>
+            <div class="Insider-caracter9">Racionais Mc's</div>
+        </div>
+        <div class="Columns-display-container9">
+            <div class="Insider-column-divs9 rapublica"></div>
+            <div class="Insider-caracter9">RAPública</div>
+        </div>
+        <div class="Columns-display-container9">
+            <div class="Insider-column-divs9 presencahiphop"></div>
+            <div class="Insider-caracter9">Presença HipHop</div>
+        </div>
+        <div class="Columns-display-container9">
+            <div class="Insider-column-divs9 sabotando"></div>
+            <div class="Insider-caracter9">Sabotando</div>
+        </div>
+        <div class="Columns-display-container9">
+            <div class="Insider-column-divs9 rzo"></div>
+            <div class="Insider-caracter9">RZO</div>
+        </div>
+        <div class="Columns-display-container9">
+            <div class="Insider-column-divs9 rapdubom"></div>
+            <div class="Insider-caracter9">Rap Du Bom</div>
+        </div>
+    </div>
+    <div class="Anosx">2000</div>
+    <div class="Row-display-container9">
+        <div class="Columns-display-container9">
+            <div class="Insider-column-divs9 narua"></div>
+            <div class="Insider-caracter9">Na Rua</div>
+        </div>
+        <div class="Columns-display-container9">
+            <div class="Insider-column-divs9 rapostentacao"></div>
+            <div class="Insider-caracter9">Rap Ostentação</div>
+        </div>
+        <div class="Columns-display-container9">
+            <div class="Insider-column-divs9 novaera"></div>
+            <div class="Insider-caracter9">Nova Era</div>
+        </div>
+        <div class="Columns-display-container9">
+            <div class="Insider-column-divs9 boombap"></div>
+            <div class="Insider-caracter9">Boom Bap</div>
+        </div>
+        <div class="Columns-display-container9">
+            <div class="Insider-column-divs9 radiohiphop"></div>
+            <div class="Insider-caracter9">Radio Hiphop</div>
+        </div>
+        <div class="Columns-display-container9">
+            <div class="Insider-column-divs9 somdequebra"></div>
+            <div class="Insider-caracter9">Som de Quebrada</div>
+        </div>
+    </div>
+  
+    <div class="Footer-container3">
+        <div class="insider-footer">WikiFlow - Enciclopédia do Rap | 2020 Todos os direitos reservados - Marca
+            Registrada
+        </div>
+        <div class="square-container">
+            <div class="square redesociaisicon"></div>
+        </div>
+        <div class="square-container">
+            <div class="square redesociaisicon2"></div>
+        </div>
+        <div class="square-container">
+            <div class="square redesociaisicon3"></div>
+        </div>
+        <div class="square-container">
+            <div class="square redesociaisicon4"></div>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("myAudioMCs"); 
+        x.volume = 0.3;
+        var playBtn = document.getElementById("playBtn"); 
+        var pauseBtn = document.getElementById("pauseBtn"); 
+        
+        function playAudio() { 
+          playBtn.style.display = "none";
+          pauseBtn.style.display = "block";
+          x.play(); 
+        } 
+        
+        function pauseAudio() { 
+          pauseBtn.style.display = "none";
+          playBtn.style.display = "block";
+          x.pause(); 
+        } 
+    </script>
+</body>
+</html>
